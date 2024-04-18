@@ -1,0 +1,10 @@
+^C:\USERS\JR1\MINHAO\C++\WEBSERVER1\WEB\BUILD\CMAKEFILES\B009B03D1C21819DB6D3A42DF22C32AC\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/JR1/minhao/C++/webServer1/web -BC:/Users/JR1/minhao/C++/webServer1/web/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/JR1/minhao/C++/webServer1/web/build/MyProject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
